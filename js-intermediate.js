@@ -17,6 +17,18 @@
 // console.log(getFib(fib))
 
 
+// const getFib = (num) => {
+//   if (num===1) {
+//     return [0, 1]
+//   } else {
+//     let fib = getFib(num - 1);
+//     fib.push(fib[fib.length - 1] + fib[fib.length - 2]);
+//     return fib;
+//   }
+// }
+// console.log(getFib(10))
+
+
 
 // 2. Write a function called oddChecker that takes in an array and returns a new array of only odd numbers.
 
@@ -123,20 +135,20 @@
 
 // 7. Create a function that takes in a string of a single word and returns the middle letter of the word. If the word is an even number of letters, return the two middle letters.
 
-var middleLetters1 = "hello"
-// Expected output: “l”
-var middleLetters2 = "llamas"
-// Expected output: “am”
+// var middleLetters1 = "hello"
+// // Expected output: “l”
+// var middleLetters2 = "llamas"
+// // Expected output: “am”
 
-const letters = (str) => {
-    if(str.length %2 == 0) {
-      return str.slice(str.length/2 -1, str.length/2 +1);
-  } else if (str.length %2 !== 0) {
-    return str.charAt(str.length/2)
-  }
-}
-console.log(letters(middleLetters1))
-console.log(letters(middleLetters2))
+// const letters = (str) => {
+//     if(str.length %2 == 0) {
+//       return str.slice(str.length/2 -1, str.length/2 +1);
+//   } else if (str.length %2 !== 0) {
+//     return str.charAt(str.length/2)
+//   }
+// }
+// console.log(letters(middleLetters1))
+// console.log(letters(middleLetters2))
 
 
 
