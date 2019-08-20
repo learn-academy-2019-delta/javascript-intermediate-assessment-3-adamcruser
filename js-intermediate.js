@@ -123,25 +123,22 @@
 
 // 7. Create a function that takes in a string of a single word and returns the middle letter of the word. If the word is an even number of letters, return the two middle letters.
 
-// var middleLetters1 = "apples"
-// // Expected output: “l”
-// var middleLetters2 = "lamas"
-// // Expected output: “am”
+var middleLetters1 = "hello"
+// Expected output: “l”
+var middleLetters2 = "llamas"
+// Expected output: “am”
 
-// var middleLetters1 = "hello"
+const letters = (str) => {
+    if(str.length %2 == 0) {
+      return str.slice(str.length/2 -1, str.length/2 +1);
+  } else if (str.length %2 !== 0) {
+    return str.charAt(str.length/2)
+  }
+}
+console.log(letters(middleLetters1))
+console.log(letters(middleLetters2))
 
-// let letters=(str)=>{
-// let newLetters = str.split('')
-// let i=0
-// for(i=0; i<newLetters.length / 2; i++){
-// // if(str.length % 2==0){
-// //     return str.length -1
-  
 
-// }
-// return newLetters[i-1]
-// }
-// console.log(letters(middleLetters1))
 
 
 
