@@ -4,17 +4,6 @@
 // Be sure to use all given test cases
 
 // 1. Write a function called getFib that returns the first 10 numbers of the Fibonacci sequence in an array. Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
-// var fib= [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
-// let getFib=(arr)=>{
-//   let newArr=[]
-// for(let i=0; i<arr.length;i++){
-// if (arr[i] < 56){
-// newArr.push(arr[i])
-// }
-// }
-// return newArr
-// }
-// console.log(getFib(fib))
 
 
 // const getFib = (num) => {
@@ -26,26 +15,24 @@
 //     return fib;
 //   }
 // }
-// console.log(getFib(10))
+
 
 
 
 // 2. Write a function called oddChecker that takes in an array and returns a new array of only odd numbers.
 
-// var fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
-// // Expected output: [9, 7, 199, -9]
-// var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
-// // Expected output: [7, 23, -823]
 
-// var fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
-// var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
+var fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
+// Expected output: [9, 7, 199, -9]
+var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
+// Expected output: [7, 23, -823]
 
 //   let numbers1 = fullArr1.filter(value=>typeof value==="number"&& value %2 !==0 )
 //   let numbers2 = fullArr2.filter(value=>typeof value==="number"&& value %2 !==0 )
   
 //     console.log(numbers1);
 //     console.log(numbers2);
-    
+
 // 3. Given the object below, complete the console.log to find specific information:
 
 // var bicycle = {
@@ -58,6 +45,7 @@
 // 	}
 // }
 
+
 // // Log the type of bicycle:
 // console.log(bicycle.type)
 
@@ -68,15 +56,14 @@
 // console.log(bicycle.wheels.specs[2])
 
 
+
 // // 4. Write a function that takes one argument of type array and returns the contents of that array in reverse order.
 
-// var originalArray1 = [1, 2, 3, 4, 5, 6, 7]
+var originalArray1 = [1, 2, 3, 4, 5, 6, 7]
 // // Expected output: [7, 6, 5, 4, 3, 2, 1],
-// var originalArray2 = ["a", "t", "l", "e", "d"]
+var originalArray2 = ["a", "t", "l", "e", "d"]
 // // Expected output: ["d", "e", "l", "t", "a"]
 
-// // let newArr= originalArray1.reverse()
-// // let newArr2 = originalArray2.reverse()
 
 // let reverseArr=(arr)=>{
 // return arr.reverse()
@@ -86,19 +73,17 @@
 
 
 
+
 // // 5. Write the code that would make this test pass.
 
-// // describe("multTwo", () => {
-// //     test ("returns an array with all the numbers multiplied by two", () => {
-// //         expect(multTwo([3, 4, 5])).toEqual([6, 8, 10])
-// //         expect(multTwo([23, -9, 0])).toEqual([46, -18, 0])
-// //         expect(multTwo([4.5, -4.5, 12])).toEqual([9, -9, 24])
-// //     })
-// // })
 
-// var nums1= [3, 4, 5]
-// var nums2= [23, -9, 0]
-// var nums3= [4.5, -4.5, 12]
+describe("multTwo", () => {
+    test ("returns an array with all the numbers multiplied by two", () => {
+        expect(multTwo([3, 4, 5])).toEqual([6, 8, 10])
+        expect(multTwo([23, -9, 0])).toEqual([46, -18, 0])
+        expect(multTwo([4.5, -4.5, 12])).toEqual([9, -9, 24])
+    })
+})
 
 // const multTwo1 = nums1.map(nums=> nums*2)
 // const multTwo2 = nums2.map(nums=> nums*2)
@@ -109,36 +94,25 @@
 // console.log(multTwo3);
 
 
+
 // 6. Write a function called letterCounter that logs the number of times the letter "l" appears in ourString.
 
 // var ourString = "Hello Learn Students!"
 // // Expected output: 3
 
-// var ourString = "Hello Learn Students!"
 
 // let letterCounter= (str) =>{
 //   let arr =str.toLowerCase().split('')
 //   let letterCount = 0
 //   let letter = "l"
 
-// for(let i=0; i< ourString.length; i++){
-// if(arr[i].includes(letter)){
-//   letterCount +=1
-  
-//   }return letterCount
-// }
-// console.log(letterCounter(ourString))
-
-
-
-
 
 // 7. Create a function that takes in a string of a single word and returns the middle letter of the word. If the word is an even number of letters, return the two middle letters.
 
-// var middleLetters1 = "hello"
-// // Expected output: “l”
-// var middleLetters2 = "llamas"
-// // Expected output: “am”
+var middleLetters1 = "hello"
+// Expected output: “l”
+var middleLetters2 = "lamas"
+// Expected output: “am”
 
 // const letters = (str) => {
 //     if(str.length %2 == 0) {
@@ -149,7 +123,6 @@
 // }
 // console.log(letters(middleLetters1))
 // console.log(letters(middleLetters2))
-
 
 
 
@@ -176,11 +149,10 @@
 
 // console.log(big.area)
 // console.log(large.area)
-// console.log(larger.area)
+
 
 
 // 9. Use object destructuring to return the nested values of specs. Expected output: 4, "manual"
-// Don't overthink this one, it's just destrcturing practice.
 
 // var myCar = {
 //   make: "VW",
@@ -192,6 +164,7 @@
 // }
 // let { doors, transmission } = myCar.specs
 // console.log(doors,transmission)
+
 
 
 
