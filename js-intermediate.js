@@ -6,48 +6,76 @@
 // 1. Write a function called getFib that returns the first 10 numbers of the Fibonacci sequence in an array. Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 
+// const getFib = (num) => {
+//   if (num===1) {
+//     return [0, 1]
+//   } else {
+//     let fib = getFib(num - 1);
+//     fib.push(fib[fib.length - 1] + fib[fib.length - 2]);
+//     return fib;
+//   }
+// }
+
+
+
 
 // 2. Write a function called oddChecker that takes in an array and returns a new array of only odd numbers.
+
 
 var fullArr1 = [4, 9, 0, "7", 8, true, "hey", 7, 199, -9, false, "hola"]
 // Expected output: [9, 7, 199, -9]
 var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
 // Expected output: [7, 23, -823]
 
-
+//   let numbers1 = fullArr1.filter(value=>typeof value==="number"&& value %2 !==0 )
+//   let numbers2 = fullArr2.filter(value=>typeof value==="number"&& value %2 !==0 )
+  
+//     console.log(numbers1);
+//     console.log(numbers2);
 
 // 3. Given the object below, complete the console.log to find specific information:
 
-var bicycle = {
-	type: "Roadbike",
-	gear: ["comfy seat", "cool handlebars", "vintage bell", "toe clips"],
-	wheels: {
-		count: 2,
-		specs: ["road tires", "AX-7563", "80-115 PSI"],
-		brand: "Trek"
-	}
-}
-
-// Log the type of bicycle:
-console.log()
-
-// Log the bell:
-console.log()
-
-// Log the PSI:
-console.log()
+// var bicycle = {
+// 	type: "Roadbike",
+// 	gear: ["comfy seat", "cool handlebars", "vintage bell", "toe clips"],
+// 	wheels: {
+// 		count: 2,
+// 		specs: ["road tires", "AX-7563", "80-115 PSI"],
+// 		brand: "Trek"
+// 	}
+// }
 
 
-// 4. Write a function that takes one argument of type array and returns the contents of that array in reverse order.
+// // Log the type of bicycle:
+// console.log(bicycle.type)
+
+// // Log the bell:
+// console.log(bicycle.gear[2])
+
+// // Log the PSI:
+// console.log(bicycle.wheels.specs[2])
+
+
+
+// // 4. Write a function that takes one argument of type array and returns the contents of that array in reverse order.
 
 var originalArray1 = [1, 2, 3, 4, 5, 6, 7]
-// Expected output: [7, 6, 5, 4, 3, 2, 1],
+// // Expected output: [7, 6, 5, 4, 3, 2, 1],
 var originalArray2 = ["a", "t", "l", "e", "d"]
-// Expected output: ["d", "e", "l", "t", "a"]
+// // Expected output: ["d", "e", "l", "t", "a"]
+
+
+// let reverseArr=(arr)=>{
+// return arr.reverse()
+// }
+// console.log(reverseArr(originalArray1))
+// console.log(reverseArr(originalArray2))
 
 
 
-// 5. Write the code that would make this test pass.
+
+// // 5. Write the code that would make this test pass.
+
 
 describe("multTwo", () => {
     test ("returns an array with all the numbers multiplied by two", () => {
@@ -57,13 +85,26 @@ describe("multTwo", () => {
     })
 })
 
+// const multTwo1 = nums1.map(nums=> nums*2)
+// const multTwo2 = nums2.map(nums=> nums*2)
+// const multTwo3 = nums3.map(nums=> nums*2)
+
+// console.log(multTwo1);
+// console.log(multTwo2);
+// console.log(multTwo3);
+
 
 
 // 6. Write a function called letterCounter that logs the number of times the letter "l" appears in ourString.
 
-var ourString = "Hello Learn Students!"
-// Expected output: 3
+// var ourString = "Hello Learn Students!"
+// // Expected output: 3
 
+
+// let letterCounter= (str) =>{
+//   let arr =str.toLowerCase().split('')
+//   let letterCount = 0
+//   let letter = "l"
 
 
 // 7. Create a function that takes in a string of a single word and returns the middle letter of the word. If the word is an even number of letters, return the two middle letters.
@@ -73,33 +114,65 @@ var middleLetters1 = "hello"
 var middleLetters2 = "lamas"
 // Expected output: “am”
 
+// const letters = (str) => {
+//     if(str.length %2 == 0) {
+//       return str.slice(str.length/2 -1, str.length/2 +1);
+//   } else if (str.length %2 !== 0) {
+//     return str.charAt(str.length/2)
+//   }
+// }
+// console.log(letters(middleLetters1))
+// console.log(letters(middleLetters2))
+
+
 
 
 
 // 8. Write a program to get the area of a sphere using object classes. Create three spheres with different radi as test cases. Area of a sphere =  4πr^2 (four pi r squared)
 
+// class Sphere{
+//   constructor(radius){
+//     this.radius= radius
+//   }
+//     get area(){
+//       return this.calculate()
+//   }
+//   calculate(){
+//   return 4*Math.PI*Math.pow(this.radius, 2)
+  
+//   }
+// }
+
+// let big = new Sphere(6)
+// let large= new Sphere(10)
+// let larger= new Sphere(20)
+
+// console.log(big.area)
+// console.log(large.area)
 
 
 
 // 9. Use object destructuring to return the nested values of specs. Expected output: 4, "manual"
-// Don't overthink this one, it's just destrcturing practice.
 
-var myCar = {
-  make: "VW",
-  model: "Jetta",
-  specs: {
-    doors: 4,
-    transmission: "manual",
-  }
-}
+// var myCar = {
+//   make: "VW",
+//   model: "Jetta",
+//   specs: {
+//     doors: 4,
+//     transmission: "manual",
+//   }
+// }
+// let { doors, transmission } = myCar.specs
+// console.log(doors,transmission)
+
 
 
 
 // 10. Stretch: Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 
-var numbersToAdd1 = [2, 4, 45, 9]
-// Excpected output: [2, 6, 51, 60]
-var numbersToAdd2 = [0, 7, -8, 12]
-// Expected output: [0, 7, -1, 11]
-var numbersToAdd3 = []
-// Expected output: []
+// var numbersToAdd1 = [2, 4, 45, 9]
+// // Excpected output: [2, 6, 51, 60]
+// var numbersToAdd2 = [0, 7, -8, 12]
+// // Expected output: [0, 7, -1, 11]
+// var numbersToAdd3 = []
+// // Expected output: []
